@@ -1,0 +1,69 @@
+.menu {
+    height: 100vh;
+    background: #F1F3F2;
+}
+
+.menu h3 {
+    font-weight: bold;
+    padding: 0.571em 1em;
+    width: 100%;
+}
+
+.menu a:hover {
+    text-decoration: none;
+    background: #ACACAC;
+}
+
+.adicionar {
+    float: right;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: #C2C2C2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    margin-top: 25px;
+    color: #000;
+}
+
+.download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download a {
+    background: #C2C2C2;
+    padding: 5px 20px;
+    color: #000;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    position: absolute;
+    bottom: 40px;
+}
+
+.arquivo a {
+    background: #C2C2C2;
+    color: #000;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin: 25px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
