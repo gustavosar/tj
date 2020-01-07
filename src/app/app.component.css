@@ -9,7 +9,8 @@
     width: 100%;
 }
 
-.menu a:hover {
+.menu a:hover,
+.arquivo a:hover {
     text-decoration: none;
     background: #ACACAC;
 }

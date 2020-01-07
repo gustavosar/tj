@@ -8,35 +8,47 @@ import {MenuItem,TreeNode} from 'primeng/api';
 })
 export class AppComponent {
   title = 'app';
+  filesTree: TreeNode[];
+  selectedFile: TreeNode;
 
 
-    filesTree: TreeNode[];
+  ngOnInit() {
 
-    ngOnInit() {
-      this.filesTree = [
-        {
-          label: "Documents for implement",
-          data: "Documents Folder",
-          expandedIcon: "fa fa-folder-open",
-          collapsedIcon: "fa fa-folder",
-          children: [{
-                  label: "Work",
-                  data: "Work Folder",
-                  expandedIcon: "fa fa-folder-open",
-                  collapsedIcon: "fa fa-folder",
-                  children: [{"label": "Expenses.doc", "icon": "fa fa-file-word-o", "data": "Expenses Document"}, {"label": "Resume.doc", "icon": "fa fa-file-word-o", "data": "Resume Document"}]
-              },
-              {
-                  label: "Home",
-                  data: "Home Folder",
-                  expandedIcon: "fa fa-folder-open",
-                  collapsedIcon: "fa fa-folder",
-                  children: [{"label": "Invoices.txt", "icon": "fa fa-file-word-o", "data": "Invoices for this month"}]
-              }]
+    this.filesTree = [
+      {
+        label: "Pasta",
+        expandedIcon: "fa fa-folder-open",
+        collapsedIcon: "fa fa-folder",
+        children: [{
+                label: "Sub Pasta 1",
+                data: "Work Folder",
+                expandedIcon: "fa fa-folder-open",
+                collapsedIcon: "fa fa-folder",
+                children: [{
+                  "label": "Arquivo 1.txt", 
+                  "icon": "fa fa-file-word-o",
+                    "data": "../assets/icones/download.svg"
+                  }, 
+                    {
+                      "label": "Arquivo 2.txt",
+                      "icon": "fa fa-file-word-o", 
+                      "data": "Resume Document"}]
+            },
+            {
+                label: "Sub Pasta 2",
+                data: "Home Folder",
+                expandedIcon: "fa fa-folder-open",
+                collapsedIcon: "fa fa-folder",
+                children: [{"label": "Arquivo.txt", "icon": "fa fa-file-word-o", "data": "Invoices for this month"}]
+            }]
       },
+    ];
 
-      ];
-    }
+  }
   
+  nodeSelect(event) {
+    alert("Abre documento")
+}
+
 
 }
