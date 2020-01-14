@@ -2,8 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { TreeModule } from 'primeng/primeng';
 
-import {TreeModule} from 'primeng/tree';
 
 @NgModule({
   declarations: [
@@ -11,7 +11,7 @@ import {TreeModule} from 'primeng/tree';
   ],
   imports: [
     BrowserModule,
-    TreeModule,
+    TreeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,7 +2,8 @@
 <div class="col-md-2 menu">
     <a class="adicionar">+</a>
     <h3>Arquivos </h3>
-    <p-tree [value]="filesTree" selectionMode="single" [(selection)]="selectedFile" (onNodeSelect)="nodeSelect($event)"></p-tree>
+
+    <p-tree [value]="files" selectionMode="single" [(selection)]="selectedFile" (onNodeSelect)="nodeSelect($event)"></p-tree>
 
     <div class="download">
         <a href="#">Download de todos os arquivos</a>
